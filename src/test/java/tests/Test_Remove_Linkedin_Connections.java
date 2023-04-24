@@ -83,7 +83,6 @@ public class Test_Remove_Linkedin_Connections extends BaseTest {
 
     public Object[][] setConnectionListForRemove() throws Exception {
         return Utils.setConnectionListForRemove();
-
     }
 
     @Test(priority = 9, dataProvider = "setConnectionListForRemove")

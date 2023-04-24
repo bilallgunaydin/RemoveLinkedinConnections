@@ -8,13 +8,13 @@ import java.util.Arrays;
 public class CheckForConnectionValues {
 
     public static void main(String[] args) throws Exception {
-//        getNormalList();
+        getNormalList();
 //        getPositionList();
 //        getConnectionListForRemove();
 //        DeletewithRowNumber(0);// The number is example. Do not use the number.
 //        ArrayList<Integer> RowNumberList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6));// The numbers are examples. Do not use these Numbers.
 //        DeleteWithRowNumberList(RowNumberList);
-        typePositionsForFilter();
+//        typePositionsForFilter();
     }
 
     /**

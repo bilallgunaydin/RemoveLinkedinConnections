@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import Util.ConfigReader;
+
 import java.util.Arrays;
 import java.util.Properties;
 
@@ -88,15 +89,16 @@ public class SearchPage extends BasePage {
     }
 
 
-
     By getCurrentTitleElement = By.xpath("(//div[contains(@class,'entity-result__primary-subtitle t-14 t-black t-normal')])[1]");
 
 
     public boolean checkCurrentTitleWithPosition() {
+        String positions = properties.getProperty("Positions").replaceAll(",+", ",")
+                .endsWith(",") ? properties.getProperty("Positions") : properties.getProperty("Positions") + ",";
 
         String currentTitle = (getText(getCurrentTitleElement) == null) ? "" : getText(getCurrentTitleElement);
-        return Arrays.stream(properties.getProperty("Positions")
-                .split(",")).anyMatch(position -> find(currentTitle, position));
+
+        return Arrays.stream(positions.split(",")).anyMatch(position -> find(currentTitle, position));
     }
 
     By clickOpenProfileElement = By.xpath("(//a[@class='app-aware-link '])[2]");

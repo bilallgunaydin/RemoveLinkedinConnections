@@ -1,20 +1,27 @@
-package ExcelTools;
+package Util;
 
 import org.apache.poi.ss.usermodel.*;
-import Util.ConfigReader;
-import Util.Person;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class ExcelUtils {
+public class Utils {
     static String excelFilePath = "src/test/java/ExcelTools/Connections.xlsx";
-//    static String FilePath = "C:\\Users\\Bilal\\Downloads\\Basic_LinkedInDataExport_04-10-2023\\Connections.xlsx";
+    static String FilePath = "C:\\Users\\Bilal\\Downloads\\Basic_LinkedInDataExport_04-20-2023\\Connections.xlsx";
 
-
+    /**
+     * This method returns a list of connections.
+     * Our links come sequentially for First Name.
+     * If there is no copy of your Connections file under the ExcelTools folder, it will also create a Connections Copy.xlsx file for you.
+     * Because when our Connections list deletes people who do not match our position preferences, it will also be deleted from Excel.
+     *
+     * @return: List <'Person'>
+     */
     public static List<Person> getNormalList() throws IOException {
         List<Person> personList = new ArrayList<>();
         FileInputStream inputStream = new FileInputStream(excelFilePath);
@@ -36,7 +43,7 @@ public class ExcelUtils {
         }
 
         for (Row r : sheet) {
-            if (r.getRowNum() == 0) continue;//hearders
+            if (r.getRowNum() == 0) continue; //hearders
             Cell Cell_first_Name = r.getCell(Column_first_Name);
             Cell Cell_last_Name = r.getCell(Column_last_Name);
             Cell Cell_Company_Name = r.getCell(Column_Company_Name);
@@ -51,11 +58,31 @@ public class ExcelUtils {
             personList.add(person);
         }
 
+        String sourceFile = excelFilePath;
+        String destFile = "src/test/java/ExcelTools/Connections Copy.xlsx";
+
+        File source = new File(sourceFile);
+        File dest = new File(destFile);
+
+
+        if (!dest.exists()) {
+            try {
+                Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
         return personList.stream()
                 .sorted(Comparator.comparing(Person::getFirst_Name))
                 .collect(Collectors.toList());
     }
 
+    /**
+     * This method is used to write the data in the Position column in the Connections list to the console without repeating it.
+     * The data is sorted by the name Position.
+     */
     public static void getPositionList() throws IOException {
         List<Person> personList = getNormalList()
                 .stream()
@@ -78,9 +105,8 @@ public class ExcelUtils {
         String positions = properties.getProperty("Positions").replaceAll(",+", ",")
                 .endsWith(",") ? properties.getProperty("Positions") : properties.getProperty("Positions") + ",";
 
-
-        Arrays.stream(positions.split(","))
-                .forEach(position -> filteredPersons.removeIf(person -> find(person.getPosition_Name(), position)));
+        filteredPersons.removeIf(person -> Arrays.stream(positions.split("\s*,\s*"))
+                .anyMatch(needle -> find(person.getPosition_Name(), needle)));
 
         return filteredPersons.stream()
                 .sorted(Comparator.comparing(Person::getFirst_Name))
@@ -213,20 +239,43 @@ public class ExcelUtils {
 
     public static void typePositionsForFilter() {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("How many position information will you enter?");
-        int count = scanner.nextInt();
-        scanner.nextLine();
         StringBuilder positions = new StringBuilder();
         Properties prop = new Properties();
-        for (int i = 1; i <= count; i++) {
+        int i = 1;
+
+        System.out.print("Do you want to add positions to existing positions? (1: Yes, 2: No): ");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        if (choice == 1) {
+            try (InputStream input = new FileInputStream("Configs/Positions.properties")) {
+                prop.load(input);
+                String existingPositions = prop.getProperty("Positions");
+                if (existingPositions != null && !existingPositions.trim().isEmpty()) {
+                    positions.append(existingPositions).append(", ");
+                }
+            } catch (IOException io) {
+                System.err.println("File read error: " + io.getMessage());
+            }
+        }
+
+        while (true) {
             System.out.print("Position " + i + ": ");
             String position = scanner.nextLine();
             positions.append(position).append(",");
+
+            System.out.print("Add another position? (1: Yes, 2: No): ");
+            choice = scanner.nextInt();
+            scanner.nextLine();
+            if (choice == 2) {
+                break;
+            }
+            i++;
         }
+
         prop.setProperty("Positions", positions.toString());
 
-        try (OutputStream output = new FileOutputStream("Configs/Configuration.properties")) {
+        try (OutputStream output = new FileOutputStream("Configs/Positions.properties")) {
             prop.store(output, "Position Information");
             System.out.println("Data successfully written to file.");
         } catch (IOException io) {
@@ -236,7 +285,7 @@ public class ExcelUtils {
     }
 
 
-    public static void DeletewithRowNumberList(List<Integer> rowNumber) throws IOException {
+    public static void DeleteWithRowNumberList(List<Integer> rowNumber) throws IOException {
         FileInputStream inputStream = new FileInputStream(excelFilePath);
         Workbook workbook = WorkbookFactory.create(inputStream);
         Sheet sheet = workbook.getSheetAt(0);
@@ -259,6 +308,7 @@ public class ExcelUtils {
         workbook.close();
         outputStream.close();
     }
+
 
     public static boolean find(String haystack, String needle) {
         Pattern p = Pattern.compile(needle, Pattern.LITERAL | Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);

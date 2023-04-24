@@ -29,6 +29,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return "First Name: " + getFirst_Name() + " Last Name: " + getLast_Name() + " Company Name: " + getCompany_Name() + " Pozisyon Name: " + getPosition_Name() + " Row Number: " + getRowNumber();
+        return "First Name: " + getFirst_Name()
+                + " Last Name: " + getLast_Name()
+                + " Company Name: " + getCompany_Name()
+                + " Position Name: " + getPosition_Name()
+                + " Row Number: " + getRowNumber();
     }
 }
