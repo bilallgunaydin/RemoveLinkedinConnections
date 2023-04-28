@@ -35,18 +35,41 @@ public class CheckForConnectionValues {
         Utils.getPositionList();
     }
 
+    /**
+     * This method filters out people outside the list of positions you have specified and prints the list of links to be deleted on LinkedIn for you to the console.
+     */
+
     public static void getConnectionListForRemove() throws Exception {
         System.out.println("Possible number of Connections. to be deleted: " + Utils.getConnectionListForRemove().size());
         Utils.getConnectionListForRemove().forEach(System.out::println);
     }
 
-    public static void DeletewithRowNumber(int number) throws IOException {
-        Utils.DeletewithRowNumber(number);
+    /**
+     * This method deletes a person you want to delete in Excel by RowNumber number.
+     * You can find the RowNumber number by typing the GetConnectionListForRemove method to the console.
+     *
+     * @int rowNumber
+     */
+
+    public static void DeletewithRowNumber(int rowNumber) throws IOException {
+        Utils.DeletewithRowNumber(rowNumber);
     }
 
-    public static void DeleteWithRowNumberList(ArrayList<Integer> rowNumber) throws IOException {
-        Utils.DeleteWithRowNumberList(rowNumber);
+    /**
+     *This method deletes the contacts you want to delete in Excel by ArrayList<Integer> RowNumber number.
+     * You can find the RowNumber list by typing the GetConnectionListForRemove method into the console.
+     * You can write the RowNumbers there by leaving a comma inside the parentheses written for the Arrays.asList in the RowNumberList in the main method.
+     * @ArrayList<Integer> rowNumberList
+     */
+
+    public static void DeleteWithRowNumberList(ArrayList<Integer> rowNumberList) throws IOException {
+        Utils.DeleteWithRowNumberList(rowNumberList);
     }
+
+    /**
+     * This method writes your position preferences to the Configs/Positions.properties file with the help of console.
+     * To understand how to write positions, follow this link: Link will coming.
+     */
 
     public static void typePositionsForFilter() {
         Utils.typePositionsForFilter();
