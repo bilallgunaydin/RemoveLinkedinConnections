@@ -14,7 +14,6 @@ public class MainPage extends BasePage {
     By clickConnectionsButton = By.xpath("(//a[@class='ember-view mn-community-summary__link link-without-hover-state'])[1]");
     By clickSearchWithFilterButton = By.xpath("//a[@class='ember-view mn-connections__search-with-filters link-without-visited-state']");
 
-
     public void setClickMyNetworkButton() {
         click(clickMyNetworkButton);
     }

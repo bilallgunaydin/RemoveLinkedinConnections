@@ -244,9 +244,6 @@ public abstract class BasePage {
      * @param key
      * @return WebElement
      */
-//    public WebElement presenceElement(By key) {
-//        return wait.until(ExpectedConditions.presenceOfElementLocated(key));
-//    }
     public WebElement presenceElement(By key) {
         WebElement element = null;
         try {

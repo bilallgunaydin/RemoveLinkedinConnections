@@ -54,7 +54,6 @@ public class SearchPage extends BasePage {
 
     public void clickResultButton() throws InterruptedException {
         click(resultButtonElement);
-//        Thread.sleep(1000);
     }
 
     By clickShowKeywordsButtonElement = By.xpath("//*[text()='Keywords' or text()='Anahtar sözcükler']");
@@ -117,8 +116,7 @@ public class SearchPage extends BasePage {
     }
 
     By clickStopFollowElementForScreen = By.xpath("/html/body/div[5]/div[3]/div/div/div[2]/div/div/main/section[1]/div[2]/div[3]/div/div[2]/div/div/ul/li[6]/div/span");
-    //    By clickStopFollowElementForScreen = By.xpath("(//span[@class='display-flex t-normal flex-1'])[6]");
-    By clickStopFollowElement = By.xpath("//span[@class='artdeco-button__text' and text()='Unfollow' or  text()='Takip Etmeyi Durdur']");
+   By clickStopFollowElement = By.xpath("//span[@class='artdeco-button__text' and text()='Unfollow' or  text()='Takip Etmeyi Durdur']");
 
     public void clickStopFollow() throws InterruptedException {
         Thread.sleep(1000);

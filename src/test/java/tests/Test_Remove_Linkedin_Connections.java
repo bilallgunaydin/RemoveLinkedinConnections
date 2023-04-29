@@ -5,16 +5,12 @@ import PageObjectModel.MainPage;
 import PageObjectModel.SearchPage;
 import Util.Utils;
 import org.junit.Assert;
-
 import org.testng.annotations.*;
 import Util.ConfigReader;
 import Util.Log4j;
 
-
 import java.io.IOException;
-
 import java.util.*;
-
 
 public class Test_Remove_Linkedin_Connections extends BaseTest {
     static Properties properties;

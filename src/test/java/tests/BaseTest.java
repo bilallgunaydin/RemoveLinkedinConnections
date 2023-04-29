@@ -10,10 +10,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import Util.ConfigReader;
 import Util.Log4j;
-
 import java.time.Duration;
 import java.util.Properties;
-
 
 public class BaseTest {
     static Properties properties;
