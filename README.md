@@ -1,44 +1,44 @@
 # RemoveLinkedinConnections
 
 
-![Linkedin](https://www.hizliresim.com/pq77wnb)
+[Linkedin](https://www.hizliresim.com/pq77wnb)
 
 In this project, I aimed to delete our links other than those in the position list we set on Linkedin. We can use it to avoid seeing the posts of people outside the positions we want on the homepage.
 ## Used technologies
 
-![Intellij İdea](https://www.hizliresim.com/6onjunw) **Intellij İdea Community**: IntelliJ IDEA is an Integrated Development Environment (IDE) for JVM languages designed to maximize developer productivity. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings, and lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
+[Intellij İdea](https://www.hizliresim.com/6onjunw) **Intellij İdea Community**: IntelliJ IDEA is an Integrated Development Environment (IDE) for JVM languages designed to maximize developer productivity. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings, and lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
 
-![Java](https://www.hizliresim.com/8stwn6q) **Java**: The programming language in which the project is written
+[Java](https://www.hizliresim.com/8stwn6q) **Java**: The programming language in which the project is written
 
-![TestNG](https://www.hizliresim.com/siuypkf) **TestNG**: Test Authoring Tool used for writing Test Cases and controlling outputs.
+[TestNG](https://www.hizliresim.com/siuypkf) **TestNG**: Test Authoring Tool used for writing Test Cases and controlling outputs.
 
-![Selenium](https://www.hizliresim.com/5dchpz3) **Selenium**: Test Automation Tool used to test Website 
+[Selenium](https://www.hizliresim.com/5dchpz3) **Selenium**: Test Automation Tool used to test Website 
 
 **WebDriverManager**: WebDriverManager is an open-source Java library that carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver (e.g., chromedriver, geckodriver, msedgedriver, etc.) in a fully automated manner. In addition, as of version 5, WebDriverManager provides other relevant features, such as the capability to discover browsers installed in the local system, building WebDriver objects (such as ChromeDriver, FirefoxDriver, EdgeDriver, etc.), running browsers in Docker containers seamlessly, and monitoring capabilities.
 
-![Page-Object-Model](https://www.hizliresim.com/268mmhe) **Page Object Model**: It is the architectural structure used in the project.
+[Page-Object-Model](https://www.hizliresim.com/268mmhe) **Page Object Model**: It is the architectural structure used in the project.
 
-![Excel](https://www.hizliresim.com/c5m2zy9) **Microsoft Excel**: A software program created by Microsoft that uses spreadsheets to organize numbers and data with formulas and functions. Excel analysis is ubiquitous around the world and used by businesses of all sizes to perform financial analysis. 
+[Excel](https://www.hizliresim.com/c5m2zy9) **Microsoft Excel**: A software program created by Microsoft that uses spreadsheets to organize numbers and data with formulas and functions. Excel analysis is ubiquitous around the world and used by businesses of all sizes to perform financial analysis. 
 
 Note: For Excel, you should use a version that runs the XLS and XLSX file extensions.
 
-![Junit](https://www.hizliresim.com/1aap09s) **Junit**: JUnit is an open source test automation tool in Java language. The purpose of this tool is to provide a simple, repeatable and readable testing framework that is used to test the accuracy of your code. JUnit is very widely used in the Java world, as well as the existence of similar tools for many other languages.
+[Junit](https://www.hizliresim.com/1aap09s) **Junit**: JUnit is an open source test automation tool in Java language. The purpose of this tool is to provide a simple, repeatable and readable testing framework that is used to test the accuracy of your code. JUnit is very widely used in the Java world, as well as the existence of similar tools for many other languages.
 
-![png-transparent-leaf-apache-mave](https://www.hizliresim.com/seqll8w) **Maven**: Automation and build tool that is usually used during the compilation of commands on the Java platform.
+[Maven](https://www.hizliresim.com/seqll8w) **Maven**: Automation and build tool that is usually used during the compilation of commands on the Java platform.
 
-![log4j](https://www.hizliresim.com/fu64mo2) **LOG4J**: log4j is a reliable, fast and flexible logging framework (APIs) written in Java, which is distributed under the Apache Software License. 
+[log4j](https://www.hizliresim.com/fu64mo2) **LOG4J**: log4j is a reliable, fast and flexible logging framework (APIs) written in Java, which is distributed under the Apache Software License. 
 ## Demo
 
 ## https://www.youtube.com/watch?v=VTaQWcnO5X4
 
   ## Screenshots
-![Screenshot](https://www.hizliresim.com/illo07j)
+[Screenshot](https://www.hizliresim.com/illo07j)
 
-![Screenshot](https://www.hizliresim.com/2jo2ire)
+[Screenshot](https://www.hizliresim.com/2jo2ire)
 
-![Screenshot](https://www.hizliresim.com/6ol05u0)
+[Screenshot](https://www.hizliresim.com/6ol05u0)
 
-![Screenshot](https://www.hizliresim.com/52cj70t)
+[Screenshot](https://www.hizliresim.com/52cj70t)
 
 ## Run Locally
 
