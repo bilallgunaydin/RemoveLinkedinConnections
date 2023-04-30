@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test name="Test">
-        <parameter name="email" value="bilallgunaydin@gmail.com"/>
-        <parameter name="password" value="Cucumb3r_g4ug3_?_"/>
+        <parameter name="email" value="Value"/>
+        <parameter name="password" value="Value"/>
         <classes>
             <class name="tests.Test_Remove_Linkedin_Connections">
             </class>
