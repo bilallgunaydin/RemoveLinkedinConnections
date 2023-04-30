@@ -2,6 +2,7 @@
 
 
 ![Linkedin](https://img.onl/izv5yG)
+
 In this project, I aimed to delete our links other than those in the position list we set on Linkedin. We can use it to avoid seeing the posts of people outside the positions we want on the homepage.
 ## Used technologies
 
@@ -16,7 +17,7 @@ In this project, I aimed to delete our links other than those in the position li
 
 **WebDriverManager**: WebDriverManager is an open-source Java library that carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver (e.g., chromedriver, geckodriver, msedgedriver, etc.) in a fully automated manner. In addition, as of version 5, WebDriverManager provides other relevant features, such as the capability to discover browsers installed in the local system, building WebDriver objects (such as ChromeDriver, FirefoxDriver, EdgeDriver, etc.), running browsers in Docker containers seamlessly, and monitoring capabilities.
 
-![Page-Object-Model](https://user-images.githubusercontent.com/21973124/198896027-6ad45ea7-7ac5-4a5d-ae30-34a7ae5efcda.png) **Page Obj ect Model**: It is the architectural structure used in the project.
+![Page-Object-Model](https://user-images.githubusercontent.com/21973124/198896027-6ad45ea7-7ac5-4a5d-ae30-34a7ae5efcda.png) **Page Object Model**: It is the architectural structure used in the project.
 
 ![Excel](https://img.onl/S1tyfQ) **Microsoft Excel**: A software program created by Microsoft that uses spreadsheets to organize numbers and data with formulas and functions. Excel analysis is ubiquitous around the world and used by businesses of all sizes to perform financial analysis. 
 
@@ -64,13 +65,9 @@ Before Running
 ![IntelliJ Settings](https://img.onl/7WC88f)
 
 ```bash
-
-   After that you should searching for "Encodings". 
+   After that you should searching for 'Encodings'. 
    Sometimes our positions categories can't supported for English language. 
-   
    You should change it. Check below the screenshot
-
-
 ```
 ![IntelliJ Settings](https://img.onl/CrURdV)
 
@@ -120,14 +117,6 @@ Before Running
 ```
 [Utils](https://github.com/bilallgunaydin/RemoveLinkedinConnections/blob/master/src/test/java/Util/Utils.java)
 
-```bash
-   We need to refresh Maven before running anything.
-```
-
-
-```bash
-   We need to refresh Maven before running anything.
-```
 
 I wrote several methods to check our data in Excel. I'll write what those methods do. You can reach the methods from the link below:
 
