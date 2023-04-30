@@ -1,7 +1,7 @@
 # RemoveLinkedinConnections
 
 
-![Linkedin](https://www.hizliresim.com/pq77wnb)
+![Linkedin](https://www.hizliresim.com/pq77wnb.png)
 
 In this project, I aimed to delete our links other than those in the position list we set on Linkedin. We can use it to avoid seeing the posts of people outside the positions we want on the homepage.
 ## Used technologies
