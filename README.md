@@ -138,7 +138,7 @@ In Main you will see methods that are commented out. I have prepared them for yo
 
 1) You can come into the Positions.properties file in [Position.properties](https://github.com/bilallgunaydin/RemoveLinkedinConnections/blob/master/Configs/Positions.properties) and write the positions by hand, leaving a comma between them, without getting caught in the big or small harmony.
  
-2) You can run the typePositionsForFilter method and write the positions you want from the keyboard in order and ask it to create data for you in Positions.properties.
+2) You can run the typePositionsForFilter method and write the positions you want from the keyboard in order and ask it to create data for you in [Position.properties](https://github.com/bilallgunaydin/RemoveLinkedinConnections/blob/master/Configs/Positions.properties)
 
   After you run the method, it will ask you if you want to write additional new positions to the positions you wrote before with the question “Do you want to add positions to existing positions?” on the console. If you type 1 and press Enter, it will add new positions to the positions you typed before. If you type 2 and press Enter, it will create a new position list for you. “Add another position?” after each position you write. It will ask you if you want to add another position. You can create a new position by typing 1 again and typing Enter, or you can complete the process of adding a position by typing 2 and pressing Enter.
 
