@@ -1,44 +1,45 @@
 # RemoveLinkedinConnections
 
 
-![Linkedin](https://www.hizliresim.com/pq77wnb)
+![Linkedin](https://i.hizliresim.com/pu6f7pj.png)
 
 In this project, I aimed to delete our links other than those in the position list we set on Linkedin. We can use it to avoid seeing the posts of people outside the positions we want on the homepage.
 ## Used technologies
 
-[Intellij İdea](https://www.hizliresim.com/6onjunw) **Intellij İdea Community**: IntelliJ IDEA is an Integrated Development Environment (IDE) for JVM languages designed to maximize developer productivity. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings, and lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
+![Intellij İdea](https://i.hizliresim.com/8b0ohdr.png) **Intellij İdea Community**: IntelliJ IDEA is an Integrated Development Environment (IDE) for JVM languages designed to maximize developer productivity. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings, and lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
 
-[Java](https://www.hizliresim.com/8stwn6q) **Java**: The programming language in which the project is written
+![Java](https://i.hizliresim.com/kdbjn9t.jpg) **Java**: The programming language in which the project is written
 
-[TestNG](https://www.hizliresim.com/siuypkf) **TestNG**: Test Authoring Tool used for writing Test Cases and controlling outputs.
+![TestNG](https://i.hizliresim.com/bjf2qxa.png) **TestNG**: Test Authoring Tool used for writing Test Cases and controlling outputs.
 
-[Selenium](https://www.hizliresim.com/5dchpz3) **Selenium**: Test Automation Tool used to test Website 
+![Selenium](https://i.hizliresim.com/5esboie.png) **Selenium**: Test Automation Tool used to test Website 
 
 **WebDriverManager**: WebDriverManager is an open-source Java library that carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver (e.g., chromedriver, geckodriver, msedgedriver, etc.) in a fully automated manner. In addition, as of version 5, WebDriverManager provides other relevant features, such as the capability to discover browsers installed in the local system, building WebDriver objects (such as ChromeDriver, FirefoxDriver, EdgeDriver, etc.), running browsers in Docker containers seamlessly, and monitoring capabilities.
 
-[Page-Object-Model](https://www.hizliresim.com/268mmhe) **Page Object Model**: It is the architectural structure used in the project.
+![Page-Object-Model](https://i.hizliresim.com/99iyktb.png) **Page Object Model**: It is the architectural structure used in the project.
 
-[Excel](https://www.hizliresim.com/c5m2zy9) **Microsoft Excel**: A software program created by Microsoft that uses spreadsheets to organize numbers and data with formulas and functions. Excel analysis is ubiquitous around the world and used by businesses of all sizes to perform financial analysis. 
+![Excel](https://i.hizliresim.com/9inhy08.png) **Microsoft Excel**: A software program created by Microsoft that uses spreadsheets to organize numbers and data with formulas and functions. Excel analysis is ubiquitous around the world and used by businesses of all sizes to perform financial analysis. 
 
 Note: For Excel, you should use a version that runs the XLS and XLSX file extensions.
 
-[Junit](https://www.hizliresim.com/1aap09s) **Junit**: JUnit is an open source test automation tool in Java language. The purpose of this tool is to provide a simple, repeatable and readable testing framework that is used to test the accuracy of your code. JUnit is very widely used in the Java world, as well as the existence of similar tools for many other languages.
+![Junit](https://i.hizliresim.com/dax3wiu.png) **Junit**: JUnit is an open source test automation tool in Java language. The purpose of this tool is to provide a simple, repeatable and readable testing framework that is used to test the accuracy of your code. JUnit is very widely used in the Java world, as well as the existence of similar tools for many other languages.
 
-[Maven](https://www.hizliresim.com/seqll8w) **Maven**: Automation and build tool that is usually used during the compilation of commands on the Java platform.
+![Maven](https://i.hizliresim.com/7n1x4er.png) **Maven**: Automation and build tool that is usually used during the compilation of commands on the Java platform.
 
-[log4j](https://www.hizliresim.com/fu64mo2) **LOG4J**: log4j is a reliable, fast and flexible logging framework (APIs) written in Java, which is distributed under the Apache Software License. 
+![log4j](https://i.hizliresim.com/8awfhoz.png) **LOG4J**: log4j is a reliable, fast and flexible logging framework (APIs) written in Java, which is distributed under the Apache Software License. 
 ## Demo
 
 ## https://www.youtube.com/watch?v=VTaQWcnO5X4
 
-  ## Screenshots
-[Screenshot](https://www.hizliresim.com/illo07j)
+## Screenshots
 
-[Screenshot](https://www.hizliresim.com/2jo2ire)
+![Screenshot](https://i.hizliresim.com/o8z88ug.png)
 
-[Screenshot](https://www.hizliresim.com/6ol05u0)
+![Screenshot](https://i.hizliresim.com/fte3xft.png)
 
-[Screenshot]([https://www.hizliresim.com/52cj70t görsel])
+![Screenshot](https://i.hizliresim.com/q9tzdpd.png)
+
+![Screenshot](https://i.hizliresim.com/ii9s1j8.jpg)
 
 ## Run Locally
 
@@ -61,14 +62,14 @@ Before Running
    
 ```
 
-![IntelliJ Settings](https://img.onl/7WC88f)
+![IntelliJ Settings](https://i.hizliresim.com/ecdfaem.png)
 
 ```bash
    After that you should searching for 'Encodings'. 
    Sometimes our positions categories can't supported for English language. 
    You should change it. Check below the screenshot
 ```
-![IntelliJ Settings](https://img.onl/CrURdV)
+![IntelliJ Settings](https://i.hizliresim.com/fyua4r3.png)
 
 ```bash
     We need a list for our connections. You should open the link:
@@ -207,29 +208,21 @@ While the project is running, I give information with a few screenshots and fini
 
 The lines I wrote here are a convenience that I use to get rid of the Scroll. I did it like this so that it wouldn't go down and write data again every time. The actual deletion process starts from here.
 
-![ForEscapeTheScroll](https://img.onl/a3tzgP)
+![ForEscapeTheScroll](https://i.hizliresim.com/gk16mgd.png)
 
 If you see the screen below once in a while after typing the names, do not close the project. There is no problem. Here we can understand that the data from Excel is not correct for the moment. Some of your connections may change their positions or make other changes until you run the project. When it can't find the person who wrote it, it deletes that person from Excel in order not to write it again.
 
-![SomeNoResultsForSearching](https://img.onl/JIjka)
+![SomeNoResultsForSearching](https://i.hizliresim.com/2z8cdaq.png)
 
 Wrote a connection information and showed the result. If there is no match in the list of positions, it will enter the profile and delete it and come back. Then it will delete the name of that link from Excel. Then he will write the new name. If you check a link and don't click and enter the profile, you can tell it matches a key from your list of positions. Then it will delete that person from Excel and write the new name.
 
 While the project is running, you can look at the Log screen and follow the processes and understand this.
 
-![LogScreen](https://img.onl/Qljy3)
+![LogScreen](https://i.hizliresim.com/b0s4t70.png)
 
 If you see a connection information with a green tick on the left, you will understand that it has been deleted.
 
 Depending on the number of positions and control status you have written for the positions, each link to be deleted will be deleted on average between 40 and 50 seconds. I hope I have written a useful project for you. Thank you for patiently reading this far.
-
-
-
-
-
-
-
-
 
   
 ## Feedback
