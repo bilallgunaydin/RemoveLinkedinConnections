@@ -1,7 +1,7 @@
 # RemoveLinkedinConnections
 
 
-![Linkedin](https://www.hizliresim.com/pq77wnb.png)
+![Linkedin](https://www.hizliresim.com/pq77wnb)
 
 In this project, I aimed to delete our links other than those in the position list we set on Linkedin. We can use it to avoid seeing the posts of people outside the positions we want on the homepage.
 ## Used technologies
@@ -38,7 +38,7 @@ Note: For Excel, you should use a version that runs the XLS and XLSX file extens
 
 [Screenshot](https://www.hizliresim.com/6ol05u0)
 
-[Screenshot](https://www.hizliresim.com/52cj70t)
+[Screenshot]([https://www.hizliresim.com/52cj70t görsel])
 
 ## Run Locally
 
