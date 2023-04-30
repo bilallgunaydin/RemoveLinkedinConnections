@@ -1,14 +1,14 @@
 # RemoveLinkedinConnections
 
 
-![Linkedin](https://img.onl/izv5yG)
+![Linkedin](https://www.hizliresim.com/gu6kyxp)
 
 In this project, I aimed to delete our links other than those in the position list we set on Linkedin. We can use it to avoid seeing the posts of people outside the positions we want on the homepage.
 ## Used technologies
 
 ![Intellij İdea](https://img.onl/TtbK6C) **Intellij İdea Community**: IntelliJ IDEA is an Integrated Development Environment (IDE) for JVM languages designed to maximize developer productivity. It does the routine and repetitive tasks for you by providing clever code completion, static code analysis, and refactorings, and lets you focus on the bright side of software development, making it not only productive but also an enjoyable experience.
 
-![Java](https://user-images.githubusercontent.com/21973124/221045301-8ba20fed-9b89-4a2d-aa1a-144f18081059.png) **Java**: The programming language in which the project is written
+![Java](https://www.hizliresim.com/8stwn6q) **Java**: The programming language in which the project is written
 
 ![TestNG](https://user-images.githubusercontent.com/21973124/221045634-305f0c6a-0fb4-4516-a7b6-7e2b5ea77f97.png) **TestNG**: Test Authoring Tool used for writing Test Cases and controlling outputs.
 
