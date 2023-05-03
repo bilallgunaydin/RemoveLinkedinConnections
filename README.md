@@ -29,7 +29,7 @@ Note: For Excel, you should use a version that runs the XLS and XLSX file extens
 ![log4j](https://i.hizliresim.com/8awfhoz.png) **LOG4J**: log4j is a reliable, fast and flexible logging framework (APIs) written in Java, which is distributed under the Apache Software License. 
 ## Demo
 
-## [Youtube Demo] (https://youtu.be/KyeeJg-SGXo)
+## [Youtube Demo](https://youtu.be/KyeeJg-SGXo)
 
 ## Screenshots
 
@@ -227,7 +227,7 @@ Depending on the number of positions and control status you have written for the
   
 ## Feedback
 
-You can read the Turkish Medium article of the project at this link: [Medium] https://medium.com/@bilalgunaydin/linkedinde-i%CC%87stemedi%C4%9Fimiz-pozisyonlarda-%C3%A7al%C4%B1%C5%9Fanlar%C4%B1-selenium-i%CC%87le-otomatik-olarak-silmek-c517f7f468d9
+[You can read the Turkish Medium article of the project at this link](https://medium.com/@bilalgunaydin/linkedinde-i%CC%87stemedi%C4%9Fimiz-pozisyonlarda-%C3%A7al%C4%B1%C5%9Fanlar%C4%B1-selenium-i%CC%87le-otomatik-olarak-silmek-c517f7f468d9)
 
 If you have any feedback on the project, please contact me at bilallgunaydin@gmail.com.
 
