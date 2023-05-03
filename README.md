@@ -227,6 +227,10 @@ Depending on the number of positions and control status you have written for the
   
 ## Feedback
 
+You can read the Turkish Medium article of the project at this link:
+
 If you have any feedback on the project, please contact me at bilallgunaydin@gmail.com.
+
+
 
   
